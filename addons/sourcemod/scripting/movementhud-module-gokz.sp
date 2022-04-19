@@ -10,7 +10,7 @@ public Plugin myinfo =
 	name = "MovementHUD-Module-GOKZ",
 	author = "Sikari",
 	description = "Provides MovementHUD integration for GOKZ",
-	version = "1.0.0",
+	version = "1.0.1",
 	url = "https://github.com/Sikarii/MovementHUD-Misc",
 };
 
