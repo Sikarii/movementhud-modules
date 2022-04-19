@@ -5,7 +5,7 @@ public Plugin myinfo =
 	name = "MovementHUD-Module-KZTimer",
 	author = "Sikari",
 	description = "Provides MovementHUD integration for KZTimer",
-	version = "1.0.0",
+	version = "1.0.1",
 	url = "https://github.com/Sikarii/MovementHUD-Misc",
 };
 

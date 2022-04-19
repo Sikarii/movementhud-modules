@@ -10,7 +10,7 @@ public Plugin myinfo =
 	name = "MovementHUD-Module-GOKZ",
 	author = "Sikari",
 	description = "Provides MovementHUD integration for GOKZ",
-	version = "1.0.0",
+	version = "1.0.1",
 	url = "https://github.com/Sikarii/MovementHUD-Misc",
 };
 
@@ -94,8 +94,11 @@ public void TopMenuHandler_Preferences(TopMenu topmenu, TopMenuAction action, To
 
 public void MHud_Movement_OnTakeoff(int client, bool didJump, bool &didPerf, float &takeoffSpeed)
 {
-    didPerf = GOKZ_GetHitPerf(client);
-    takeoffSpeed = GOKZ_GetTakeoffSpeed(client);
+    if (!IsFakeClient(client))
+    {
+        didPerf = GOKZ_GetHitPerf(client);
+        takeoffSpeed = GOKZ_GetTakeoffSpeed(client);
+    }
 }
 
 public void MHud_OnPreferenceValueSet(int client, char id[MHUD_MAX_ID], char value[MHUD_MAX_VALUE])
